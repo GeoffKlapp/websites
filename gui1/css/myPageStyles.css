@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* File: ../css/myPageStyles.css
+   Geoff Klapproth, UMass Lowell Computer Science alumni
+   Geoffrey_Klapproth@student.uml.edu or geoffklapproth@gmail.com
+   Created on: 9/22/15
+
+   This file is intended to style the home page of my personal
+   weblab.cs.uml.edu page.
+*/
+
+
+/* Created a background image for the body, and enforced full page coverage */
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('http://i763.photobucket.com/albums/xx272/Toukou/Backgrounds/6787-neon-headphones-1920x1080-music-wallpaper_zps2d9bc892.\
+jpg~original');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left top;
+    background-color: black;
+}
+
+/* Changes all headers to emphasize importance/scale based on color and font size.
+   Used a Google Font, Maven Pro, and imported in for text with a bit more personality. */
+h1 {
+    font-family:'Maven Pro', sans-serif;
+    font-size: 38pt;
+    color: rgb(255,255,255);
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+h2 {
+    font-family:'Maven Pro', sans-serif;
+    font-size: 24pt;
+    color: rgb(0,150,30);
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+
+h3 {
+    font-family:'Maven Pro', sans-serif;
+    font-size: 18pt;
+    color: rgb(0,150,30);
+    font-weight: normal;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+}
+
+ul {
+    color: rgb(255,0,0);
+    margin-left: 6%;
+}
+
+/* Changes all content paragraphs to be spaced and colored accordingly for site legibility */
+p.content {
+    font-family:'Maven Pro', sans-serif;
+    font-size: 10pt;
+    color: rgb(255,255,255);
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-shadow: -1px -1px 0 #00f, 1px -1px 0 #00f, -1px 1px 0 #00f, 1px 1px 0 #00f;
+    word-wrap: normal;
+}
+
+/* Currently not used but formatted for quick usage later to not clash with background coloring */
+p {
+    color: rgb(255,255,255);
+    word-wrap: normal;
+}

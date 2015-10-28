@@ -12,30 +12,32 @@
                 var colEnd = Number(document.getElementById('colMax').value);
                 var table = '<table border="1">';
                 
+                //Loop that creates the rows for the table, using x as a comparator as to not change the start or end values.
                 for( var x = rowStart; x <= rowEnd; x++ ) {
-                    table += '<tr>';
-                    for( var y = colStart; y <= colEnd; y++ ) {
-                        table += '<td>' + (x*y) + '</td>';
+                    table += '<tr>'; //Inserts a table row for every x it increments/passes validation
+                    for( var y = colStart; y <= colEnd; y++ ) {   //Creates the values for the columns using y, same premise as for the rows
+                        table += '<td>' + (x*y) + '</td>';   //Adds a data element to the table, inserts the value for the multiplicand of x and y, and closes the data element.
                     }
-                    table += '</tr>'
+                    table += '</tr>'  //Closes the table row before looping to create another or break from the loop.
                 }
-                return table + '</table>';
+                return table + '</table>';  //Closes the table attribute and returns the table object to populate on the page.
             }
-            function buildTable() {
+            function buildTable() {  
+                //Finds where to place the table as HTML, and calls the createTable() function to populate it.
                 document.getElementById('multiplicationTable').innerHTML = createTable();
             }
         </script>
     </head>
     <body>
-        <form name="myTable">
+        <form name="myTable"> //Form the user sees and fills out for parameters.
             Row minimum: <input type="text" id="rowMin" placeholder="Minimum value"><br>
             Row maximum: <input type="text" id="rowMax" placeholder="Maximum value"><br>
             Column minimum: <input type="text" id="colMin" placeholder="Minimum value"><br>
             Column maximum: <input type="text" id="colMax" placeholder="Maximum value"><br>
-            <input type="button" value="Make my table" onclick="buildTable()">
+            <input type="button" value="Make my table" onclick="buildTable()"> //Makes a button that creates the table when clicked.
         </form>
-        <p></p>
-        <div id="multiplicationTable">
+        <p></p> //Buffer between the button and the table.
+        <div id="multiplicationTable"> //Spot where the multiplication table *should* display for the user.
         </div>
     </body>
 </html>

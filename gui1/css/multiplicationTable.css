@@ -7,6 +7,7 @@ input[type="button"] {
 input[type="text"] {
     width: 100px;
     float: left;
+    clear: left;
     text-align: left;
 }
 

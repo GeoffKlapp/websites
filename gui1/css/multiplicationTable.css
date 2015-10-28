@@ -6,8 +6,6 @@ input[type="button"] {
 
 input[type="text"] {
     width: 100px;
-    float: left;
-    text-align: left;
 }
 
 form {
@@ -26,8 +24,6 @@ div {
 label {
     width: 150px;
     text-align: left;
-    float: left;
-    clear: left;
 }
 
 h1 {

@@ -14,6 +14,20 @@
                 var colEnd = Number(document.getElementById('colMax').value);
                 var table = '<table border="1">';
                 
+                var message;
+                message = document.getElementById("message");
+                message.innerHTML = "";
+
+                try {
+                    if( rowEnd < rowStart ) throw "The row maximum is less than the row minimum.";
+                    if( colEnd < colStart ) throw "The column maximum is less than the column minimum.";
+                    if( rowStart == "" ) throw "The row minimum value is empty.";
+                    if( rowEnd == "" ) throw "The row maximum value is empty.";
+                }
+                catch(err) {
+                    message.innerHTML = err;
+                }
+                
                 for( var x = rowStart; x <= rowEnd; x++ ) {
                     table += '<tr>';
                     for( var y = colStart; y <= colEnd; y++ ) {
@@ -37,6 +51,7 @@
             Column maximum: <input type="text" id="colMax" placeholder="Maximum value"><br><br>
             <input type="button" value="Make my table" onclick="buildTable()">
         </form>
+        <p id="message"></p>
         <p></p>
         <div id="multiplicationTable">
         </div>

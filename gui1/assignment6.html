@@ -23,6 +23,12 @@
                     if( colEnd < colStart ) throw "The column maximum is less than the column minimum.";
                     if( rowStart == "" ) throw "The row minimum value is empty.";
                     if( rowEnd == "" ) throw "The row maximum value is empty.";
+                    if( colStart == "" ) throw "The column minimum value is empty.";
+                    if( colEnd == "" ) throw "The column maximum value is empty.";
+                    if( isNaN(rowStart)) throw "The row minimum value is not a number.";
+                    if( isNaN(rowEnd)) throw "The row maximum value is not a number.";
+                    if( isNaN(colStart)) throw "The column minimum value is not a number.";
+                    if( isNaN(colEnd)) throw "The column maximum value is not a number.";
                 }
                 catch(err) {
                     message.innerHTML = err;

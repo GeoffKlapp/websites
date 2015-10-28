@@ -27,6 +27,7 @@ label {
     clear: left;
     width: 150px;
     text-align: left;
+    display: inline-block;
 }
 
 h1 {

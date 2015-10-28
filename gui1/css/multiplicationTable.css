@@ -8,8 +8,6 @@ input[type="text"] {
     width: 100px;
     margin-bottom: 20px;
     margin-top: 20px;
-    float: right;
-    text-align: left;
 }
 
 form {

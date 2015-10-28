@@ -43,3 +43,8 @@ table {
 p {
     margin-left: 40px;
 }
+
+#message {
+    color: red;
+    font-size: 40px;
+}

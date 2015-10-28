@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Multiplication Table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- This website is for assignment #6 for GUI Programming 1 - 2015/16, taught by 
+        Professor Jesse Heines at UMass Lowell.
+        Author: Geoff Klapproth  Geoffrey_Klapproth@student.uml.edu
+        Date:10/20/15
+        -->
+        
+        <script type="text/javascript">
+            function createTable() {
+                var rowStart = Number(document.getElementById('rowMin').value);
+                var rowEnd = Number(document.getElementById('rowMax').value);
+                var colStart = Number(document.getElementById('colMin').value);
+                var colEnd = Number(document.getElementById('colMax').value);
+                var table = '<table border="1">';
+                
+                for( var x = rowStart; x <= rowEnd; x++ ) {
+                    table += '<tr>';
+                    for( var y = colStart; y <= colEnd; y++ ) {
+                        table += '<td>' + (x*y) + '</td>';
+                    }
+                    table += '</tr>'
+                }
+                return table + '</table>';
+            }
+            function buildTable() {
+                document.getElementById('multiplicationTable').innerHTML = createTable();
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myTable">
+            Row minimum: <input type="text" id="rowMin" placeholder="Minimum value"><br>
+            Row maximum: <input type="text" id="rowMax" placeholder="Maximum value"><br>
+            Column minimum: <input type="text" id="colMin" placeholder="Minimum value"><br>
+            Column maximum: <input type="text" id="colMax" placeholder="Maximum value"><br>
+            <input type="button" value="Make my table" onclick="buildTable()">
+        </form>
+        <p></p>
+        <div id="multiplicationTable">
+        </div>
+    </body>
+</html>

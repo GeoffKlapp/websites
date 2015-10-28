@@ -5,10 +5,7 @@ input[type="button"] {
 }
 
 input[type="text"] {
-    position: relative;
     width: 100px;
-    float: left;
-    text-align: left;
 }
 
 form {
@@ -25,11 +22,8 @@ div {
 }
 
 label {
-    position: absolute;
     width: 150px;
     text-align: left;
-    float: left;
-    clear: left;
 }
 
 h1 {

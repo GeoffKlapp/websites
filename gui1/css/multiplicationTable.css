@@ -19,7 +19,7 @@ div {
 
 form {
     margin-left: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     text-align: left;
 }
 
@@ -39,6 +39,7 @@ h1 {
 
 table {
     background-color: yellow;
+    float: left;
 }
 
 p {

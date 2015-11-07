@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    //CSS stylesheet used for only this page here. Replaced with V2, modified from Assignment6
     <link href="css/multiplicationTableV2.css" type="text/css" rel="stylesheet">
     
+    //Sources for jQuery and the validator are here
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 
+    //Javascript file containing the table creation functionality and jQuery custom validation rules and messages.
     <script src="js/multiplicationTable.js" type="text/javascript"></script>
 
   </head>
@@ -17,7 +20,12 @@
   <body>
     <h1>Dynamic Multiplication Table</h1>
     <form name="myTable" id="form1" method="GET">
-
+      /*
+      In this form, there are four inputs that look for text from the user. In front of each input, there is a <p>
+      tag which is specifically identified to accompany the inputs, and following the text inputs are labels which 
+      house and control where the jQuery validation error messages are printed. 
+      */
+      
       <p id="forminput">Please insert a starting row value:
       <input type="text" name="rowMin" id="rowMin" placeholder="Minimum value">&nbsp;
       <label for="rowMin" class="error"></label></p>
@@ -34,12 +42,19 @@
       <input type="text" name="colMax" id="colMax" placeholder="Maximum value">&nbsp;
       <label for="colMax" class="error"></label></p>
 
+      /*
+      The button type is used here to prevent the page from refreshing after each form submission. When the user 
+      clicks the button, it calls on the buildTable() function which is housed in the .js file to populate the 
+      table should the function determine the form is valid.
+      */
       <input type="button" value="Make my table" onclick="buildTable()">
     </form>
 
+    //This is where the table is displayed when the function populates the div with innerHTML.
     <div id="multiplicationTable">
     </div>
 
+    //Something silly added underneath to explain what this page obviously does.
     <p>Fun little tool to input the start and end of the row and column to find a multiplication table for those numbers.</p>
   </body>
 </html>

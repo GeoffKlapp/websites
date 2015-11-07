@@ -20,6 +20,10 @@ h1 {
     text-align: left;
 }
 
+table {
+    font-weight: bold;
+}
+
 tr:nth-child(even) {
     background-color: yellow;
 }

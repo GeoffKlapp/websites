@@ -24,6 +24,10 @@ table {
     background-color: yellow;
 }
 
+tr:nth-child(even) {
+    background-color: white;
+}
+
 p {
     margin-left: 40px;
 }

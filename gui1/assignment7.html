@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table - jQuery Validated</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/multiplicationTable.css" type="text/css" rel="stylesheet">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+
+    <script src="js/multiplicationTable.js" type="text/javascript"></script>
+
+  </head>
+
+  <body>
+    <h1>Dynamic Multiplication Table</h1>
+    <form name="myTable" id="form1" method="GET" action="">
+
+      <p>Please insert a starting row value:
+      <input type="text" name="rowMin" id="rowMin" placeholder="Minimum value">&nbsp;
+      <label for="rowMin" class="error"></label></p>
+
+      <p>Please insert an ending row value:
+      <input type="text" name="rowMax" id="rowMax" placeholder="Maximum value">
+      <label for="rowMax" class="error"></label></p>
+
+      <p>Please insert a starting column value:
+      <input type="text" name="colMin" id="colMin" placeholder="Minimum value">
+      <label for="colMin" class="error"></label></p>
+
+      <p>Please insert an ending column value:
+      <input type="text" name="colMax" id="colMax" placeholder="Maximum value">
+      <label for="colMax" class="error"></label></p>
+
+      <input type="submit" value="Make my table" onclick="buildTable()">
+    </form>
+
+    <div id="multiplicationTable">
+    </div>
+
+    <p>Fun little tool to input the start and end of the row and column to find a multiplication table for those numbers.</p>
+  </body>
+</html>

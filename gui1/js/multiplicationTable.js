@@ -47,7 +47,7 @@ function createTable() {
 }
 
 $(document).ready( function() {
-
+  
   $('#form1').validate( {
     
     /*
@@ -56,18 +56,22 @@ $(document).ready( function() {
     */
     rules: {
       rowMin: {
+        min: 1,
         required: true,
         digits: true
       },
       rowMax: {
+        min: 1,
         required: true,
         digits: true
       },
       colMin: {
+        min: 1,
         required: true,
         digits: true
       },
       colMax: {
+        min: 1,
         required: true,
         digits: true
       }
@@ -84,6 +88,9 @@ $(document).ready( function() {
         },
         digits: function() {
           return "The starting row value must be a valid integer.";
+        },
+        min: function() {
+          return "This value must be at least 1.";
         }
       },
 
@@ -93,6 +100,9 @@ $(document).ready( function() {
         },
         digits: function() {
           return "The ending row value must be a valid integer.";
+        },
+        min: function() {
+          return "This value must be at least 1.";
         }
       },
 
@@ -102,6 +112,9 @@ $(document).ready( function() {
         },
         digits: function() {
           return "The starting column value must be a valid integer.";
+        },
+        min: function() {
+          return "This value must be at least 1.";
         }
       },
 
@@ -111,6 +124,9 @@ $(document).ready( function() {
         },
         digits: function() {
           return "The ending column value must be a valid integer.";
+        },
+        min: function() {
+          return "This value must be at least 1.";
         }
       }
 

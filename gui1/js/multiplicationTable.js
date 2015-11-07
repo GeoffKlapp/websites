@@ -75,7 +75,7 @@ $(document).ready( function() {
           return "The starting row value is required.";
         },
         digits: function() {
-          return "The starting row value must be a valid number.";
+          return "The starting row value must be a valid integer.";
         }
       },
 
@@ -84,7 +84,7 @@ $(document).ready( function() {
           return "The ending row value is required.";
         },
         digits: function() {
-          return "The ending row value must be a valid number.";
+          return "The ending row value must be a valid integer.";
         }
       },
 
@@ -93,7 +93,7 @@ $(document).ready( function() {
           return "The starting column value is required.";
         },
         digits: function() {
-          return "The starting column value must be a valid number.";
+          return "The starting column value must be a valid integer.";
         }
       },
 
@@ -102,7 +102,7 @@ $(document).ready( function() {
           return "The ending column value is required.";
         },
         digits: function() {
-          return "The ending column value must be a valid number.";
+          return "The ending column value must be a valid integer.";
         }
       }
 

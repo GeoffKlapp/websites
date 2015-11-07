@@ -1,3 +1,9 @@
+/*
+Written and maintained by Geoff Klapproth, 
+Geoffrey_Klapproth@student.uml.edu or geoffklapproth@gmail.com
+11/05/15
+*/
+
 /* 
 This function is what the button in the form relies on to execute the createTable() function, 
 which will populate and place the table into the multiplicationTable div. 

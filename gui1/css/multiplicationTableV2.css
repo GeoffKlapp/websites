@@ -33,16 +33,12 @@ tr:nth-child(even) {
     background-color: blue;
 }
 
-#forminput {
-    display: inline-block;
+p, #forminput {
     margin-left: 40px;
-    width: 500px;
 }
 
 label.error {
-    display: inline-block;
     color: red;
     font-style: italic;
     font-weight: bold;
-    float: left;
 }

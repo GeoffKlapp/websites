@@ -51,7 +51,8 @@ $(document).ready( function() {
   //Nabbed from Jesse Heines, https://teaching.cs.uml.edu/~heines/91.461/91.461-2015-16f/461-lecs/lecture19.jsp
   $.validator.addMethod('lessThanEqual', function(value, element, param) {
     return this.optional(element) || parseInt(value) <= param;
-  }, "The value must be less than {0}.");
+  }, "The value must be less than {0}."
+  );
   
   $('#form1').validate( {
     

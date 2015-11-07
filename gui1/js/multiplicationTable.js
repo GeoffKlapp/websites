@@ -54,7 +54,7 @@ $(document).ready( function() {
   //Thanks John Oxley: http://stackoverflow.com/questions/1260984/jquery-validate-less-than
   $.validator.addMethod('lessThanEqual', function(value, element, param) {
     return this.optional(element) || parseInt(value) <= parseInt($(param).val());
-  }, "The value {0} must be less than {1}");
+  }, "");
   
   $('#form1').validate( {
     

@@ -50,14 +50,15 @@ function createTable() {
 }
 
 $(document).ready( function() {
-  
-  //Nabbed from Jesse Heines, https://teaching.cs.uml.edu/~heines/91.461/91.461-2015-16f/461-lecs/lecture19.jsp
-  /*
-  $.validator.addMethod('lessThanEqual', function(value, element, param) {
-    return this.optional(element) || parseInt(value) <= param;
-  }, "The value must be less than {0}."
+
+  //Thanks FerrousOxide: http://stackoverflow.com/questions/1260984/jquery-validate-less-than
+  $.validator.addMethod('lessThanEqual', 
+    function(value, element, param) {
+      var i = parseInt(value);
+      var j = parseInt(param);
+      return ( i <= j ) ? true : false;  //Slightly modified here, very slightly.
+    }
   );
-  */
   
   $('#form1').validate( {
     
@@ -70,7 +71,7 @@ $(document).ready( function() {
         min: 1,
         required: true,
         digits: true,
-        //lessThanEqual: $('#rowMax').val()  //Use row maximum value to check if row minimum value is less than or equal
+        lessThanEqual: $('#rowMax').val()  //Use row maximum value to check if row minimum value is less than or equal
       },
       rowMax: {
         min: 1,
@@ -81,7 +82,7 @@ $(document).ready( function() {
         min: 1,
         required: true,
         digits: true,
-        //lessThanEqual: $('#colMax').val()  //Use column maximum value to check if column minimum is less than or equal
+        lessThanEqual: $('#colMax').val()  //Use column maximum value to check if column minimum is less than or equal
       },
       colMax: {
         min: 1,

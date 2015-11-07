@@ -34,11 +34,13 @@ tr:nth-child(even) {
 }
 
 #forminput {
+    display: inline-block;
     margin-left: 40px;
     width: 500px;
 }
 
 label.error {
+    display: inline-block;
     color: red;
     font-style: italic;
     font-weight: bold;

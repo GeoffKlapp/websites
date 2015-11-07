@@ -46,37 +46,37 @@ $(document).ready( function() {
     messages: {
       rowMin: {
         required: function() {
-          return "The minimum row value is required.";
+          return "The starting row value is required.";
         },
         number: function() {
-          return "The minimum row value must be a valid number.";
+          return "The starting row value must be a valid number.";
         }
       },
 
       rowMax: {
         required: function() {
-          return "The maximum row value is required.";
+          return "The ending row value is required.";
         },
         number: function() {
-          return "The maximum row value must be a valid number.";
+          return "The ending row value must be a valid number.";
         }
       },
 
       colMin: {
         required: function() {
-          return "The minimum column value is required.";
+          return "The starting column value is required.";
         },
         number: function() {
-          return "The minimum column value must be a valid number.";
+          return "The starting column value must be a valid number.";
         }
       },
 
       colMax: {
         required: function() {
-          return "The maximum column value is required.";
+          return "The ending column value is required.";
         },
         number: function() {
-          return "The maximum column value must be a valid number.";
+          return "The ending column value must be a valid number.";
         }
       }
 

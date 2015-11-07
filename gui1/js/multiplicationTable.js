@@ -101,6 +101,9 @@ $(document).ready( function() {
         },
         min: function() {
           return "This value must be at least 1.";
+        },
+        lessThanEqual: function() {
+          return "This value must be less than the ending row value.";
         }
       },
 
@@ -125,6 +128,9 @@ $(document).ready( function() {
         },
         min: function() {
           return "This value must be at least 1.";
+        },
+        lessThanEqual: function() {
+          return "This value must be less than the ending column value."
         }
       },
 

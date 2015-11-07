@@ -21,7 +21,7 @@ h1 {
 }
 
 tr:nth-child(even) {
-    background-color: white;
+    background-color: yellow;
 }
 
 p {

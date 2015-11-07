@@ -1,3 +1,9 @@
+function buildTable() {
+  if( $('#form1').valid ) {
+    document.getElementById('multiplicationTable').innerHTML = createTable();
+  }
+}
+
 function createTable() {
   var rowStart = Number(document.getElementById('rowMin').value);
   var rowEnd = Number(document.getElementById('rowMax').value);
@@ -10,15 +16,9 @@ function createTable() {
       for( var y = colStart; y <= colEnd; y++ ) {
         table += '<td>' + (x*y) + '</td>';
       }
-        table += '</tr>';
-      }
-      return table + '</table>';
+      table += '</tr>';
     }
-
-function buildTable() {
-  if( $('#form1').valid ) {
-    document.getElementById('multiplicationTable').innerHTML = createTable();
-  }
+  return table + '</table>';
 }
 
 $(document).ready( function() {

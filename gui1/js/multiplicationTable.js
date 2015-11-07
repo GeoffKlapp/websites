@@ -1,7 +1,5 @@
 /*
-Written and maintained by Geoff Klapproth, 
-Geoffrey_Klapproth@student.uml.edu or geoffklapproth@gmail.com
-11/05/15
+
 */
 
 /* 

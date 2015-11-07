@@ -37,7 +37,8 @@ p {
     margin-left: 40px;
 }
 
-#message {
+label.error {
     color: red;
-    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
 }

@@ -49,19 +49,19 @@ $(document).ready( function() {
     rules: {
       rowMin: {
         required: true,
-        number: true
+        digits: true
       },
       rowMax: {
         required: true,
-        number: true
+        digits: true
       },
       colMin: {
         required: true,
-        number: true
+        digits: true
       },
       colMax: {
         required: true,
-        number: true
+        digits: true
       }
     },
 
@@ -74,7 +74,7 @@ $(document).ready( function() {
         required: function() {
           return "The starting row value is required.";
         },
-        number: function() {
+        digits: function() {
           return "The starting row value must be a valid number.";
         }
       },
@@ -83,7 +83,7 @@ $(document).ready( function() {
         required: function() {
           return "The ending row value is required.";
         },
-        number: function() {
+        digits: function() {
           return "The ending row value must be a valid number.";
         }
       },
@@ -92,7 +92,7 @@ $(document).ready( function() {
         required: function() {
           return "The starting column value is required.";
         },
-        number: function() {
+        digits: function() {
           return "The starting column value must be a valid number.";
         }
       },
@@ -101,7 +101,7 @@ $(document).ready( function() {
         required: function() {
           return "The ending column value is required.";
         },
-        number: function() {
+        digits: function() {
           return "The ending column value must be a valid number.";
         }
       }

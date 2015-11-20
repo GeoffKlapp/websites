@@ -6,6 +6,58 @@
   Assignment 7 .js file hosting jQuery and Javascript functions
 */
 
+$(function() {
+  $(#sliderRowMin).slider({
+    value: 1,
+    min: 1,
+    max: 99,
+    step: 5,
+    slide: function( event, ui ) {
+      $(#rowMin).val( "$" + ui.value );
+    }
+  });
+  $( "#rowMin" ).val( "$" + $( "#sliderRowMin" ).slider( "value" ) );
+});
+
+$(function() {
+  $(#sliderRowMax).slider({
+    value: 1,
+    min: 1,
+    max: 99,
+    step: 5,
+    slide: function( event, ui ) {
+      $(#rowMax).val( "$" + ui.value );
+    }
+  });
+  $( "#rowMax" ).val( "$" + $( "#sliderRowMax" ).slider( "value" ) );
+});
+
+$(function() {
+  $(#sliderColMin).slider({
+    value: 1,
+    min: 1,
+    max: 99,
+    step: 5,
+    slide: function( event, ui ) {
+      $(#colMin).val( "$" + ui.value );
+    }
+  });
+  $( "#colMin" ).val( "$" + $( "#sliderColMin" ).slider( "value" ) );
+});
+
+$(function() {
+  $(#sliderColMax).slider({
+    value: 1,
+    min: 1,
+    max: 99,
+    step: 5,
+    slide: function( event, ui ) {
+      $(#colMax).val( "$" + ui.value );
+    }
+  });
+  $( "#colMax" ).val( "$" + $( "#sliderColMax" ).slider( "value" ) );
+});
+
 /* 
 This function is what the button in the form relies on to execute the createTable() function, 
 which will populate and place the table into the multiplicationTable div. 
@@ -65,23 +117,27 @@ $(document).ready( function() {
     rules: {
       rowMin: {
         min: 1,
+        max: 99,
         required: true,
         digits: true,
         lessThanEqual: $('#rowMax')  //Use row maximum value to check if row minimum value is less than or equal
       },
       rowMax: {
         min: 1,
+        max: 99,
         required: true,
         digits: true
       },
       colMin: {
         min: 1,
+        max: 99,
         required: true,
         digits: true,
         lessThanEqual: $('#colMax')  //Use column maximum value to check if column minimum is less than or equal
       },
       colMax: {
         min: 1,
+        max: 99,
         required: true,
         digits: true
       }
@@ -104,6 +160,9 @@ $(document).ready( function() {
         },
         lessThanEqual: function() {
           return "This value must be less than the ending row value.";
+        },
+        max: function() {
+          return "This value must be no more than 99."
         }
       },
 
@@ -116,6 +175,9 @@ $(document).ready( function() {
         },
         min: function() {
           return "This value must be at least 1.";
+        },
+        max: function() {
+          return "This value must be no more than 99."
         }
       },
 
@@ -131,6 +193,9 @@ $(document).ready( function() {
         },
         lessThanEqual: function() {
           return "This value must be less than the ending column value."
+        },
+        max: function() {
+          return "This value must be no more than 99."
         }
       },
 
@@ -143,6 +208,9 @@ $(document).ready( function() {
         },
         min: function() {
           return "This value must be at least 1.";
+        },
+        max: function() {
+          return "This value must be no more than 99."
         }
       }
 

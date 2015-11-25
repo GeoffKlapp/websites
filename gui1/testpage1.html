@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    
+    <script>
+    $(document).ready( function() {
+      $('#thisSlider').slider({
+        value: 1,
+        min: 1,
+        max: 99,
+        step: 5,
+        slide: function( event, ui ) {
+          $('#thisSlider').val( "$" + ui.value );
+        }
+      });
+      $('#thisSlider').val( "$" + $( "#sliderRowMin" ).slider( "value" ) );
+    });
+    </script>
+    
+  </head>
+    
+  <body>
+    <p>Random text goes here</p>
+    <div id="thisSlider"></div>
+  </body>
+</html>

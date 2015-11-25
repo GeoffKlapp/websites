@@ -10,18 +10,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     
     <script>
-    $(document).ready( function() {
-      $('#thisSlider').slider({
-        value: 1,
-        min: 1,
-        max: 99,
-        step: 5,
-        slide: function( event, ui ) {
-          $('#thisSlider').val( "$" + ui.value );
-        }
+      $(function () {
+        $('#thisSlider').slider();
       });
-      $('#thisSlider').val( "$" + $( "#sliderRowMin" ).slider( "value" ) );
-    });
     </script>
     
   </head>

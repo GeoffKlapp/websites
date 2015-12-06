@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     
     <script>
-      $(function () {
+      $(document).ready( function () {
         $('#thisSlider').slider(
           {
             value: 1,
@@ -32,6 +32,6 @@
       <label for="amount">Donation amount:</label>
       <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
     </p>
-    <div id="thisSlider"></div>
+    <div class ="sliders" id="thisSlider"></div>
   </body>
 </html>

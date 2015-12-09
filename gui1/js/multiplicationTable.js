@@ -6,8 +6,6 @@
   Assignment 7 .js file hosting jQuery and Javascript functions
 */
 
-
-
 /* 
 This function is what the button in the form relies on to execute the createTable() function, 
 which will populate and place the table into the multiplicationTable div. 

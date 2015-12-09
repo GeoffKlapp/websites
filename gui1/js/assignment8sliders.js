@@ -6,3 +6,7 @@
   Assignment 8 jQuery file to initialize and use UI sliders
 */
 
+function {
+  
+}
+

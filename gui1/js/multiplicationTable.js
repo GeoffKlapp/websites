@@ -163,53 +163,7 @@ $(document).ready( function() {
           return "This value must be no more than 99."
         }
       }
-
     }
 
     });
-    
-  $("#sliderRowMin").slider({
-    value: 1,
-    min: 1,
-    max: 99,
-    step: 5,
-    slide: function( event, ui ) {
-      $(#rowMin).val( "$" + ui.value );
-    }
-  });
-  $( "#rowMin" ).val( "$" + $( "#sliderRowMin" ).slider( "value" ) );
-
-  $("#sliderRowMax").slider({
-    value: 1,
-    min: 1,
-    max: 99,
-    step: 5,
-    slide: function( event, ui ) {
-      $(#rowMax).val( "$" + ui.value );
-    }
-  });
-  $( "#rowMax" ).val( "$" + $( "#sliderRowMax" ).slider( "value" ) );
-
-  $("#sliderColMin").slider({
-    value: 1,
-    min: 1,
-    max: 99,
-    step: 5,
-    slide: function( event, ui ) {
-      $(#colMin).val( "$" + ui.value );
-    }
-  });
-  $( "#colMin" ).val( "$" + $( "#sliderColMin" ).slider( "value" ) );
-
-  $("#sliderColMax").slider({
-    value: 1,
-    min: 1,
-    max: 99,
-    step: 5,
-    slide: function( event, ui ) {
-      $(#colMax).val( "$" + ui.value );
-    }
-  });
-  $( "#colMax" ).val( "$" + $( "#sliderColMax" ).slider( "value" ) );
-    
 });

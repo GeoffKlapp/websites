@@ -25,10 +25,10 @@ and appends all necessary HTML tags and data into the string variable named tabl
 houses all the text to populate the div on the page.
 */
 function createTable() {
-  var rowStart = Number(document.getElementById('rowMin').value);  //Gets the number value for the row minimum
-  var rowEnd = Number(document.getElementById('rowMax').value);    //Gets the number value for the row maximum
-  var colStart = Number(document.getElementById('colMin').value);  //Gets the number value for the col minimum
-  var colEnd = Number(document.getElementById('colMax').value);    //Gets the number value for the col maximum
+  var rowStart = Number(document.getElementById('rowStart').value);  //Gets the number value for the row minimum
+  var rowEnd = Number(document.getElementById('rowEnd').value);    //Gets the number value for the row maximum
+  var colStart = Number(document.getElementById('colStart').value);  //Gets the number value for the col minimum
+  var colEnd = Number(document.getElementById('colEnd').value);    //Gets the number value for the col maximum
   var table = '<table border="1">';  //Adds the starting table tag to the string variable
 
     /*
@@ -63,29 +63,29 @@ $(document).ready( function() {
     required for the table to be populated.
     */
     rules: {
-      rowMin: {
+      rowStart: {
         min: 1,
-        max: 99,
+        max: 20,
         required: true,
         digits: true,
         lessThanEqual: $('#rowMax')  //Use row maximum value to check if row minimum value is less than or equal
       },
-      rowMax: {
+      rowEnd: {
         min: 1,
-        max: 99,
+        max: 20,
         required: true,
         digits: true
       },
-      colMin: {
+      colStart: {
         min: 1,
-        max: 99,
+        max: 20,
         required: true,
         digits: true,
         lessThanEqual: $('#colMax')  //Use column maximum value to check if column minimum is less than or equal
       },
-      colMax: {
+      colEnd: {
         min: 1,
-        max: 99,
+        max: 20,
         required: true,
         digits: true
       }
@@ -96,7 +96,7 @@ $(document).ready( function() {
     filled out incorrectly or have any missing data.
     */
     messages: {
-      rowMin: {
+      rowStart: {
         required: function() {
           return "The starting row value is required.";
         },
@@ -110,11 +110,11 @@ $(document).ready( function() {
           return "This value must be less than the ending row value.";
         },
         max: function() {
-          return "This value must be no more than 99."
+          return "The starting row value must be no more than 20."
         }
       },
 
-      rowMax: {
+      rowEnd: {
         required: function() {
           return "The ending row value is required.";
         },
@@ -125,11 +125,11 @@ $(document).ready( function() {
           return "This value must be at least 1.";
         },
         max: function() {
-          return "This value must be no more than 99."
+          return "The ending row value must be no more than 20."
         }
       },
 
-      colMin: {
+      colStart: {
         required: function() {
           return "The starting column value is required.";
         },
@@ -143,7 +143,7 @@ $(document).ready( function() {
           return "This value must be less than the ending column value."
         },
         max: function() {
-          return "This value must be no more than 99."
+          return "The starting column value must be no more than 20."
         }
       },
 
@@ -158,7 +158,7 @@ $(document).ready( function() {
           return "This value must be at least 1.";
         },
         max: function() {
-          return "This value must be no more than 99."
+          return "The ending column value must be no more than 20."
         }
       }
     }

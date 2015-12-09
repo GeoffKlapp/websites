@@ -11,7 +11,7 @@ This function is what the button in the form relies on to execute the createTabl
 which will populate and place the table into the multiplicationTable div. 
 */
 function buildTable() {
-  if( $('#form1').valid() ) {
+  if( $('#multiplicationTableForm').valid() ) {
     document.getElementById('multiplicationTable').innerHTML = createTable();
   }
   else {
@@ -56,7 +56,7 @@ $(document).ready( function() {
     return this.optional(element) || parseInt(value) <= parseInt($(param).val());
   }, "");
   
-  $('#form1').validate( {
+  $('#multiplicationTableForm').validate( {
     
     /*
     Defined rules for each input, where all inputs need a valid number input to build the table, and all inputs are

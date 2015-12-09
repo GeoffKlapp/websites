@@ -50,3 +50,7 @@ label.error {
     font-style: italic;
     font-weight: bold;
 }
+
+#multiplicationTable {
+  margin-left: 40px;
+}

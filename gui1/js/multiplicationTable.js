@@ -68,7 +68,7 @@ $(document).ready( function() {
         max: 20,
         required: true,
         digits: true,
-        lessThanEqual: $('#rowMax')  //Use row maximum value to check if row minimum value is less than or equal
+        lessThanEqual: $('#rowEnd')  //Use row maximum value to check if row minimum value is less than or equal
       },
       rowEnd: {
         min: 1,
@@ -81,7 +81,7 @@ $(document).ready( function() {
         max: 20,
         required: true,
         digits: true,
-        lessThanEqual: $('#colMax')  //Use column maximum value to check if column minimum is less than or equal
+        lessThanEqual: $('#colEnd')  //Use column maximum value to check if column minimum is less than or equal
       },
       colEnd: {
         min: 1,
@@ -110,7 +110,7 @@ $(document).ready( function() {
           return "This value must be less than the ending row value.";
         },
         max: function() {
-          return "The starting row value must be no more than 20."
+          $('#error_messages').html("This value cannot be above 20.");
         }
       },
 

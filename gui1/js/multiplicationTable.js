@@ -110,7 +110,7 @@ $(document).ready( function() {
           return "This value must be less than the ending row value.";
         },
         max: function() {
-          $('#error_messages').html("This value cannot be above 20.");
+          return "This value must be no more than 20.";
         }
       },
 
@@ -125,7 +125,7 @@ $(document).ready( function() {
           return "This value must be at least 1.";
         },
         max: function() {
-          return "The ending row value must be no more than 20."
+          return "This value must be no more than 20."
         }
       },
 
@@ -143,7 +143,7 @@ $(document).ready( function() {
           return "This value must be less than the ending column value."
         },
         max: function() {
-          return "The starting column value must be no more than 20."
+          return "This value must be no more than 20."
         }
       },
 
@@ -158,7 +158,7 @@ $(document).ready( function() {
           return "This value must be at least 1.";
         },
         max: function() {
-          return "The ending column value must be no more than 20."
+          return "This value must be no more than 20."
         }
       }
     }

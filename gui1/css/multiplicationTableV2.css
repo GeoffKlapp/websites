@@ -33,9 +33,10 @@ h1 {
 }
 
 td {
-    width: 20px;
+    width: 30px;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
 tr:nth-child(odd) {

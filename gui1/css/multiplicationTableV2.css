@@ -15,6 +15,7 @@
 
 #multiplicationTable tr:first-child td:first-child {
   background-color: white; !important
+  color: black; !important
 }
 
 input[type="button"] {

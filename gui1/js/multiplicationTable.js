@@ -39,8 +39,15 @@ function createTable() {
     maximum value in order to fill each element until the column ends, and a new row needs to be created or the 
     table is filled. Each <td> has the product of x and y inserted inside, which creates the multiplication results.
     */
+    
+    table += '<tr>' + '<td>' + '*' + '</td>';
+    for( var i = rowStart; i <= rowEnd; i++) {
+      table += '<td>' + i + '</td>';
+    }
+    table += '</tr>';
+    
     for( var x = rowStart; x <= rowEnd; x++ ) {
-      table += '<tr>';
+      table += '<tr>' + <td> + x + '</td>';
       for( var y = colStart; y <= colEnd; y++ ) {
         table += '<td>' + (x*y) + '</td>';
       }

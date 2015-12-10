@@ -9,7 +9,7 @@
 */
 
 #multiplicationTable tr:first-child td, #multiplicationTable tr td:first-child {
-  background-color: green; !important
+  !important background-color: green;
 }
 
 input[type="button"] {

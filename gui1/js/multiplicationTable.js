@@ -40,7 +40,7 @@ function createTable() {
     table is filled. Each <td> has the product of x and y inserted inside, which creates the multiplication results.
     */
     
-  table += '<tr>' + '<td>' + 'x' + '</td>';
+  table += '<tr>' + '<td>' + '*' + '</td>';
   for( var i = rowStart; i <= rowEnd; i++) {
     table += '<td>' + i + '</td>';
   }

@@ -8,7 +8,7 @@
   Updated to use for Assignment 8, changed basic layout and added UI slider styling
 */
 
-.category_table tr td:first child {
+.category_table tr:first-child td {
   background-color: yellow;
 }
 

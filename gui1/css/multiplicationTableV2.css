@@ -9,12 +9,7 @@
 */
 
 #multiplicationTable tr:first-child td, #multiplicationTable tr td:first-child {
-  background-color: yellow; !important
-  color: black; !important
-}
-
-#multiplicationTable tr:first-child td:first-child {
-  background-color: white; !important
+  background-color: green; !important
   color: black; !important
 }
 

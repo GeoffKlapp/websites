@@ -40,19 +40,19 @@ function createTable() {
     table is filled. Each <td> has the product of x and y inserted inside, which creates the multiplication results.
     */
     
-    table += '<tr>' + '<td>' + '*' + '</td>';
-    for( var i = rowStart; i <= rowEnd; i++) {
-      table += '<td>' + i + '</td>';
+  table += '<tr>' + '<td>' + 'x' + '</td>';
+  for( var i = rowStart; i <= rowEnd; i++) {
+    table += '<td>' + i + '</td>';
+  }
+  table += '</tr>';
+    
+  for( var x = rowStart; x <= rowEnd; x++ ) {
+    table += '<tr>' + '<td>' + x + '</td>';
+    for( var y = colStart; y <= colEnd; y++ ) {
+      table += '<td>' + (x*y) + '</td>';
     }
     table += '</tr>';
-    
-    for( var x = rowStart; x <= rowEnd; x++ ) {
-      table += '<tr>' + <td> + x + '</td>';
-      for( var y = colStart; y <= colEnd; y++ ) {
-        table += '<td>' + (x*y) + '</td>';
-      }
-      table += '</tr>';
-    }
+  }
   return table + '</table>';  //Returns the string variable table that is now populated, along with the closing tag.
 }
 
@@ -63,7 +63,7 @@ $(document).ready( function() {
     return this.optional(element) || parseInt(value) <= parseInt($(param).val());
   }, "");
   
-  $('#multiplicationTableForm').validate( {
+  $('#multiplicationTableForm').validate({
     
     /*
     Defined rules for each input, where all inputs need a valid number input to build the table, and all inputs are
@@ -169,6 +169,5 @@ $(document).ready( function() {
         }
       }
     }
-
-    });
+  });
 });

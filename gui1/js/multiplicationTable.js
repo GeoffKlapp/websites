@@ -154,7 +154,7 @@ $(document).ready( function() {
         }
       },
 
-      colMax: {
+      colEnd: {
         required: function() {
           return "The ending column value is required.";
         },

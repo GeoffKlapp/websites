@@ -10,7 +10,6 @@
 
 #multiplicationTable tr:first-child td, #multiplicationTable tr td:first-child {
   background-color: green; !important
-  color: black; !important
 }
 
 input[type="button"] {

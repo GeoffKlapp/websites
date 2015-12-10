@@ -41,7 +41,7 @@ function createTable() {
     */
     
   table += '<tr>' + '<td>' + '*' + '</td>';
-  for( var i = rowStart; i <= rowEnd; i++) {
+  for( var i = colStart; i <= colEnd; i++) {
     table += '<td>' + i + '</td>';
   }
   table += '</tr>';

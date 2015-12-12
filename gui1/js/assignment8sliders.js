@@ -15,7 +15,7 @@ $(document).ready({
       slide: function(event, ui) {
         $("#rowStart").val(ui.value);
       }
-    });
+    }),
 
     $("#sliderRowEnd").slider({
       value: 1,
@@ -25,7 +25,7 @@ $(document).ready({
       slide: function(event, ui) {
         $("#rowEnd").val(ui.value);
       }
-    });
+    }),
 
     $("#sliderColStart").slider({
       value: 1,
@@ -35,7 +35,7 @@ $(document).ready({
       slide: function(event, ui) {
         $("#colStart").val(ui.value);
       }
-    });
+    }),
 
     $("#sliderColEnd").slider({
       value: 1,
@@ -45,6 +45,6 @@ $(document).ready({
       slide: function(event, ui) {
         $("#colEnd").val(ui.value);
       }
-    });
+    })
   }
 });

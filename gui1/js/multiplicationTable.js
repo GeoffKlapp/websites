@@ -72,27 +72,27 @@ $(document).ready( function() {
     rules: {
       rowStart: {
         min: 1,
-        max: 20,
+        max: 50,
         required: true,
         digits: true,
         lessThanEqual: $('#rowEnd')  //Use row maximum value to check if row minimum value is less than or equal
       },
       rowEnd: {
         min: 1,
-        max: 20,
+        max: 50,
         required: true,
         digits: true
       },
       colStart: {
         min: 1,
-        max: 20,
+        max: 50,
         required: true,
         digits: true,
         lessThanEqual: $('#colEnd')  //Use column maximum value to check if column minimum is less than or equal
       },
       colEnd: {
         min: 1,
-        max: 20,
+        max: 50,
         required: true,
         digits: true
       }
@@ -117,7 +117,7 @@ $(document).ready( function() {
           return "This value must be less than the ending row value.";
         },
         max: function() {
-          return "This value must be no more than 20.";
+          return "This value must be no more than 50.";
         }
       },
 
@@ -132,7 +132,7 @@ $(document).ready( function() {
           return "This value must be at least 1.";
         },
         max: function() {
-          return "This value must be no more than 20."
+          return "This value must be no more than 50."
         }
       },
 
@@ -150,7 +150,7 @@ $(document).ready( function() {
           return "This value must be less than the ending column value."
         },
         max: function() {
-          return "This value must be no more than 20."
+          return "This value must be no more than 50."
         }
       },
 
@@ -165,7 +165,7 @@ $(document).ready( function() {
           return "This value must be at least 1.";
         },
         max: function() {
-          return "This value must be no more than 20."
+          return "This value must be no more than 50."
         }
       }
     }

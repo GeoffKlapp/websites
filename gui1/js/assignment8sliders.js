@@ -6,9 +6,10 @@
   Assignment 8 jQuery file to initialize and use UI sliders
 */
 
-/* This initializes all "slider___" fields on the multiplicationTableForm form and converts them into a slider */
 $(
   function() {
+    
+    /* This section initializes all "slider___" fields on the multiplicationTableForm form and converts them into a slider */
     $('#sliderRowStart').slider({
       value: 1, //Same starting value as the number spinner in the form
       min: 1,
@@ -53,6 +54,7 @@ $(
       }
     });
     
+    /* This section monitors the input fields and changes the slider accordingly to match the field */
     $('#rowStart').change(
       function(){
         $('#sliderRowStart').slider( "option", "value", $('#rowStart').val() );

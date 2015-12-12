@@ -13,7 +13,7 @@ $(
     $('#sliderRowStart').slider({
       value: 1, //Same starting value as the number spinner in the form
       min: 1,
-      max: 20,
+      max: 50,
       step: 1,
       slide: function(event, ui) {
         $('#rowStart').val(ui.value); //Updates the value in the field to reflect the slider
@@ -24,7 +24,7 @@ $(
     $('#sliderRowEnd').slider({
       value: 1, //Same starting value as the number spinner in the form
       min: 1,
-      max: 20,
+      max: 50,
       step: 1,
       slide: function(event, ui) {
         $('#rowEnd').val(ui.value); //Updates the value in the field to reflect the slider
@@ -35,7 +35,7 @@ $(
     $('#sliderColStart').slider({
       value: 1, //Same starting value as the number spinner in the form
       min: 1,
-      max: 20,
+      max: 50,
       step: 1,
       slide: function(event, ui) {
         $('#colStart').val(ui.value); //Updates the value in the field to reflect the slider
@@ -46,7 +46,7 @@ $(
     $('#sliderColEnd').slider({
       value: 1, //Same starting value as the number spinner in the form
       min: 1,
-      max: 20,
+      max: 50,
       step: 1,
       slide: function(event, ui) {
         $('#colEnd').val(ui.value); //Updates the value in the field to reflect the slider

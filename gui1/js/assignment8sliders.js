@@ -14,6 +14,7 @@ $(
       step: 1,
       slide: function(event, ui) {
         $('#rowStart').val(ui.value);
+        buildTable();
       }
     });
 
@@ -24,6 +25,7 @@ $(
       step: 1,
       slide: function(event, ui) {
         $('#rowEnd').val(ui.value);
+        buildTable();
       }
     });
 
@@ -34,6 +36,7 @@ $(
       step: 1,
       slide: function(event, ui) {
         $('#colStart').val(ui.value);
+        buildTable();
       }
     });
 
@@ -44,6 +47,7 @@ $(
       step: 1,
       slide: function(event, ui) {
         $('#colEnd').val(ui.value);
+        buildTable;
       }
     });
   }

@@ -62,6 +62,8 @@ label.error {
 
 #sliderRowStart, #sliderRowEnd, #sliderColStart, #sliderColEnd {
   width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .ui-slider .ui-slider-handle {

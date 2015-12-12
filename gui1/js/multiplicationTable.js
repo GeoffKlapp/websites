@@ -31,14 +31,14 @@ function createTable() {
   var colEnd = Number(document.getElementById('colEnd').value);    //Gets the number value for the col maximum
   var table = '<table border="1">';  //Adds the starting table tag to the string variable
 
-    /*
-    This set of for loops controls when to set a <tr> tag by first making a variable x that can be modified without
-    worry, and compares it against the maximum row value that the user requested. Within that for loop, there lies 
-    the second one which controls when to add a <td> tag. This operates much like the first, where a variable y is 
-    set to the user's starting value so it can be incremented without worry, and y is compared against the column 
-    maximum value in order to fill each element until the column ends, and a new row needs to be created or the 
-    table is filled. Each <td> has the product of x and y inserted inside, which creates the multiplication results.
-    */
+  /*
+  This set of for loops controls when to set a <tr> tag by first making a variable x that can be modified without
+  worry, and compares it against the maximum row value that the user requested. Within that for loop, there lies 
+  the second one which controls when to add a <td> tag. This operates much like the first, where a variable y is 
+  set to the user's starting value so it can be incremented without worry, and y is compared against the column 
+  maximum value in order to fill each element until the column ends, and a new row needs to be created or the 
+  table is filled. Each <td> has the product of x and y inserted inside, which creates the multiplication results.
+  */
     
   table += '<tr>' + '<td>' + '*' + '</td>';
   for( var i = colStart; i <= colEnd; i++) {

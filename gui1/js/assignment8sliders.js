@@ -47,7 +47,7 @@ $(
       step: 1,
       slide: function(event, ui) {
         $('#colEnd').val(ui.value);
-        buildTable;
+        buildTable();
       }
     });
   }

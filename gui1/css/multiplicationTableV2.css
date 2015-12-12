@@ -59,3 +59,11 @@ label.error {
 #multiplicationTable {
   margin-left: 40px;
 }
+
+.ui-slider .ui-slider-horizontal {
+  width: 400px;
+}
+
+.ui-slider .ui-slider-handle {
+  
+}

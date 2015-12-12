@@ -29,7 +29,7 @@ $(
 
     $('#sliderColStart').slider({
       value: 1,
-      min: -20,
+      min: 1,
       max: 20,
       step: 1,
       slide: function(event, ui) {
@@ -39,7 +39,7 @@ $(
 
     $('#sliderColEnd').slider({
       value: 1,
-      min: -20,
+      min: 1,
       max: 20,
       step: 1,
       slide: function(event, ui) {

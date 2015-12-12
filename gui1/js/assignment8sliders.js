@@ -16,9 +16,7 @@ $(document).ready({
         $("#rowStart").val(ui.value);
       }
     });
-  },
 
-  function() {
     $("#sliderRowEnd").slider({
       value: 1,
       min: 1,
@@ -28,9 +26,7 @@ $(document).ready({
         $("#rowEnd").val(ui.value);
       }
     });
-  },
 
-  function() {
     $("#sliderColStart").slider({
       value: 1,
       min: -20,
@@ -40,9 +36,7 @@ $(document).ready({
         $("#colStart").val(ui.value);
       }
     });
-  },
 
-  function() {
     $("#sliderColEnd").slider({
       value: 1,
       min: -20,

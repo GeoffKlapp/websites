@@ -16,7 +16,7 @@ $(document).ready({
         $("#rowStart").val(ui.value);
       }
     });
-  }
+  },
 
   function() {
     $("#sliderRowEnd").slider({
@@ -28,7 +28,7 @@ $(document).ready({
         $("#rowEnd").val(ui.value);
       }
     });
-  }
+  },
 
   function() {
     $("#sliderColStart").slider({
@@ -40,7 +40,7 @@ $(document).ready({
         $("#colStart").val(ui.value);
       }
     });
-  }
+  },
 
   function() {
     $("#sliderColEnd").slider({

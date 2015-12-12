@@ -15,7 +15,6 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     
     <!-- Multiplication table file -->
     <script type="text/javascript" src="js/multiplicationTable.js"></script>
@@ -25,6 +24,12 @@
     
     <!-- CSS files -->
     <link rel="stylesheet" type="text/css" href="css/multiplicationTableV2.css">
+    
+    <!-- jQuery UI files here -->
+    <script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.structure.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.theme.min.css">
     
   </head>
   
@@ -37,6 +42,7 @@
         <div>
           <label for="rowStart">Row beginning:</label>
           <input type="number" id="rowStart" name="rowStart" value="1" required>
+          <div id="sliderRowStart"></div>
         </div>
       
         <div>

@@ -60,7 +60,7 @@ label.error {
   margin-left: 40px;
 }
 
-.ui-slider .ui-slider-horizontal {
+#sliderRowStart, #sliderRowEnd, #sliderColStart, #sliderColEnd {
   width: 400px;
 }
 

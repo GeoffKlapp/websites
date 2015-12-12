@@ -34,8 +34,9 @@ div {
 /* Heading stylizing */
 h1 {
   margin-top: 40px;
-  /* margin-left: 40px; */ Old styling
-  text-align: center;
+  margin: auto;
+  /* margin-left: 40px; Old styling */
+  width: 50%;
   color: blue;
 }
 

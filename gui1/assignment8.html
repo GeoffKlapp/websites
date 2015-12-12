@@ -12,11 +12,12 @@
     Created on 11/5/15
     Assignment 8 page for jQuery validated multiplication table
     -->
-
+    
+    <!-- Import jQuery library from Google and jQuery validator from jsdelivr -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
     
-    <!-- Multiplication table file -->
+    <!-- Multiplication table script for building the actual multiplication table -->
     <script type="text/javascript" src="js/multiplicationTable.js"></script>
     
     <!-- jQuery UI files here -->
@@ -25,10 +26,10 @@
     <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.structure.min.css">
     <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.theme.min.css">
     
-    <!-- Javascript file for sliders -->
+    <!-- My Javascript file for creating sliders -->
     <script type="text/javascript" src="js/assignment8sliders.js"></script>
     
-    <!-- CSS files -->
+    <!-- My CSS file for page formatting -->
     <link rel="stylesheet" type="text/css" href="css/multiplicationTableV2.css">
     
   </head>
@@ -36,41 +37,43 @@
   <body>
     
     <h1>Dynamic Multiplication Table: Sliders Included</h1>
-
+    
+    <!-- Section 1 of the page, which hosts a form for the user to fill in each entry to submit for building a
+    multiplication table. In the form itself has 4 divs, one for each data element needed to create a page. -->
     <div>
       <form id="multiplicationTableForm" name="multiplicationTableForm" method="GET">
         <div>
           <label for="rowStart">Row beginning:</label>
           <input type="number" id="rowStart" name="rowStart" value="1" required>
-          <!-- <div id="sliderRowStart"></div> -->
-          <span id="sliderRowStart"></span>
+          <div id="sliderRowStart"></div>
         </div>
       
         <div>
           <label for="rowEnd">Row end:</label>
           <input type="number" id="rowEnd" name="rowEnd" value="1" required>
-          <!-- <div id="sliderRowEnd"></div> -->
-          <span id="sliderRowEnd"></span>
+          <div id="sliderRowEnd"></div>
         </div>
       
         <div>
           <label for="colStart">Column beginning:</label>
           <input type="number" id="colStart" name="colStart" value="1" required>
-          <!-- <div id="sliderColStart"></div> -->
-          <span id="sliderColStart"></span>
+          <div id="sliderColStart"></div>
         </div>
       
         <div>
           <label for="colEnd">Column end:</label>
           <input type="number" id="colEnd" name="colEnd" value="1" required>
-          <!-- <div id="sliderColEnd"></div> -->
-          <span id="sliderColEnd"></span>
+          <div id="sliderColEnd"></div>
         </div>
       
+        <!-- Button (id says submit but it's a button to prevent refreshing the page after the onClick event) that will 
+        initiate the buildTable() event which collects the user's inputs in each field and creates the requested multiplication
+        table. This will not do anything if there are errors in the form's inputs. -->
         <input id="submit" type="button" class="submit_table" onClick="buildTable();" value="Submit">
       </form>
     </div>
     
+    <!-- Section where the multiplication table will be added via an .innerhtml() addition done in the multiplicationTable.js file -->
     <div id="multiplicationTable"></div>
     
   </body>

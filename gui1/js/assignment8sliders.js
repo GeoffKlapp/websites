@@ -52,5 +52,34 @@ $(
         buildTable(); //Calls the buildTable() function whenever the handle is dragged around
       }
     });
+    
+    $('#rowStart').change(
+      function(){
+        $('#sliderRowStart').slider( "option", "value", $('#rowStart').val() );
+        buildTable();
+      }
+    );
+    
+    $('#rowEnd').change(
+      function(){
+        $('#sliderRowEnd').slider( "option", "value", $('#rowEnd').val() );
+        buildTable();
+      }
+    );
+    
+    $('#colStart').change(
+      function(){
+        $('#sliderColStart').slider( "option", "value", $('#colStart').val() );
+        buildTable();
+      }
+    );    
+    
+    $('#colEnd').change(
+      function(){
+        $('#sliderColEnd').slider( "option", "value", $('#colEnd').val() );
+        buildTable();
+      }
+    );    
+    
   }
 )

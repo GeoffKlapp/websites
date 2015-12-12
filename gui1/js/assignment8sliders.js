@@ -5,7 +5,7 @@
   Created on 11/5/15
   Assignment 8 jQuery file to initialize and use UI sliders
 */
-$(document).ready({
+$(
   function() {
     $('#sliderRowStart').slider({
       value: 1,
@@ -47,4 +47,4 @@ $(document).ready({
       }
     });
   }
-});
+)

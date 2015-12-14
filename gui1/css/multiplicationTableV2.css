@@ -1,0 +1,85 @@
+/*
+  File: http://geoffklapp.github.io/websites/gui1/css/multiplicationTableV2.css
+  Geoff Klapproth, UMass Lowell Computer Science alumni,
+  geoffrey_klapproth@student.uml.edu or geoffklapproth@gmail.com
+  Created on 11/5/15
+  Assignment 7 .css file containing styling for assignment7.html
+  
+  Updated to use for Assignment 8, changed basic layout and added UI slider styling
+*/
+
+/* Styles the first row and first column of the table to a different color than the product table (or the results) */
+#multiplicationTable tr:first-child td, #multiplicationTable tr td:first-child {
+  background-color: green;
+}
+
+/* Styles the button in the form to align with the other inputs */
+input[type="button"] {
+  margin-top: 20px;
+}
+
+/* Controls the form itself to reposition on the page and provide adequate spacing from the other elements on the page */
+form {
+  padding-left: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+div {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Heading stylizing */
+h1 {
+  margin-top: 40px;
+  margin: auto;
+  /* margin-left: 40px; Old styling */
+  width: 50%;
+  color: blue;
+}
+
+/* Styles all data elements in the table to a neater format for legibility and provide a fixed width */
+td {
+  width: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Every odd row has a select background */
+tr:nth-child(odd) {
+  background-color: black;
+}
+
+/* Every even row has a different background than the odd */
+tr:nth-child(even) {
+  background-color: blue;
+}
+
+/* Styles the error messages that appear next to each input field should the form not be valid */
+label.error {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Aligns the actual multiplication table div with the other elements to provide a clean and organized flow */
+#multiplicationTable {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Styles the sliders in the form to fit better and provide spacing between them and the other elements */
+#sliderRowStart, #sliderRowEnd, #sliderColStart, #sliderColEnd {
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Styles the handle of the sliders. Unused at this time.
+.ui-slider .ui-slider-handle {
+  
+}
+*/

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+    
+    <script>
+      $(document).ready( function () {
+        $('#thisSlider').slider(
+          {
+            orientation: "horizontal",
+            value: 0,
+            min: 0,
+            max: 10,
+            step: 1,
+            slide: function( event, ui) {
+              $( '#amount' ).val( "$" + ui.value );
+            }
+          });
+          $('#amount').val( "$" + $( '#thisSlider').slider( "value") );
+      });
+    </script>
+    
+    <style>
+      .ui-slider-horizontal {
+        width: 400 px; !important
+      }
+    </style>
+    
+  </head>
+    
+  <body>
+    <p>
+      <label for="amount">Donation amount:</label>
+      <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    </p>
+    <div class ="sliders" id="thisSlider"></div>
+  </body>
+</html>

@@ -1,8 +1,13 @@
+<<<<<<< HEAD
+=======
+<!DOCTYPE html>
+>>>>>>> refs/remotes/origin/gh-pages
 <html>
     <head>
         <title>Multiplication Table</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
         
         <!-- This website is for assignment #6 for GUI Programming 1 - 2015/16, taught by 
         Professor Jesse Heines at UMass Lowell.
@@ -10,6 +15,10 @@
         Date:10/20/15
         -->
         
+=======
+        <link href="css/multiplicationTable.css" type="text/css" rel="stylesheet">
+
+>>>>>>> refs/remotes/origin/gh-pages
         <script type="text/javascript">
             function createTable() {
                 var rowStart = Number(document.getElementById('rowMin').value);
@@ -18,6 +27,29 @@
                 var colEnd = Number(document.getElementById('colMax').value);
                 var table = '<table border="1">';
                 
+<<<<<<< HEAD
+=======
+                var message;
+                message = document.getElementById("message");
+                message.innerHTML = "";
+
+                try {
+                    if( rowEnd < rowStart ) throw "The row maximum is less than the row minimum.";
+                    if( colEnd < colStart ) throw "The column maximum is less than the column minimum.";
+                    if( rowStart == "" ) throw "The row minimum value is empty.";
+                    if( rowEnd == "" ) throw "The row maximum value is empty.";
+                    if( colStart == "" ) throw "The column minimum value is empty.";
+                    if( colEnd == "" ) throw "The column maximum value is empty.";
+                    if( isNaN(rowStart)) throw "The row minimum value is not a number.";
+                    if( isNaN(rowEnd)) throw "The row maximum value is not a number.";
+                    if( isNaN(colStart)) throw "The column minimum value is not a number.";
+                    if( isNaN(colEnd)) throw "The column maximum value is not a number.";
+                }
+                catch(err) {
+                    message.innerHTML = err;
+                }
+                
+>>>>>>> refs/remotes/origin/gh-pages
                 for( var x = rowStart; x <= rowEnd; x++ ) {
                     table += '<tr>';
                     for( var y = colStart; y <= colEnd; y++ ) {
@@ -33,15 +65,30 @@
         </script>
     </head>
     <body>
+<<<<<<< HEAD
+=======
+        <h1>Multiplication Table</h1>
+>>>>>>> refs/remotes/origin/gh-pages
         <form name="myTable">
             Row minimum: <input type="text" id="rowMin" placeholder="Minimum value"><br>
             Row maximum: <input type="text" id="rowMax" placeholder="Maximum value"><br>
             Column minimum: <input type="text" id="colMin" placeholder="Minimum value"><br>
+<<<<<<< HEAD
             Column maximum: <input type="text" id="colMax" placeholder="Maximum value"><br>
             <input type="button" value="Make my table" onclick="buildTable()">
         </form>
         <p></p>
         <div id="multiplicationTable">
         </div>
+=======
+            Column maximum: <input type="text" id="colMax" placeholder="Maximum value"><br><br>
+            <input type="button" value="Make my table" onclick="buildTable()">
+        </form>
+        <p id="message"></p>
+        <p></p>
+        <div id="multiplicationTable">
+        </div>
+        <p></p>
+>>>>>>> refs/remotes/origin/gh-pages
     </body>
 </html>

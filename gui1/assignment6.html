@@ -1,11 +1,24 @@
+<<<<<<< HEAD
+=======
 <!DOCTYPE html>
+>>>>>>> refs/remotes/origin/gh-pages
 <html>
     <head>
         <title>Multiplication Table</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+        
+        <!-- This website is for assignment #6 for GUI Programming 1 - 2015/16, taught by 
+        Professor Jesse Heines at UMass Lowell.
+        Author: Geoff Klapproth  Geoffrey_Klapproth@student.uml.edu
+        Date:10/20/15
+        -->
+        
+=======
         <link href="css/multiplicationTable.css" type="text/css" rel="stylesheet">
 
+>>>>>>> refs/remotes/origin/gh-pages
         <script type="text/javascript">
             function createTable() {
                 var rowStart = Number(document.getElementById('rowMin').value);
@@ -14,6 +27,8 @@
                 var colEnd = Number(document.getElementById('colMax').value);
                 var table = '<table border="1">';
                 
+<<<<<<< HEAD
+=======
                 var message;
                 message = document.getElementById("message");
                 message.innerHTML = "";
@@ -34,6 +49,7 @@
                     message.innerHTML = err;
                 }
                 
+>>>>>>> refs/remotes/origin/gh-pages
                 for( var x = rowStart; x <= rowEnd; x++ ) {
                     table += '<tr>';
                     for( var y = colStart; y <= colEnd; y++ ) {
@@ -49,11 +65,22 @@
         </script>
     </head>
     <body>
+<<<<<<< HEAD
+=======
         <h1>Multiplication Table</h1>
+>>>>>>> refs/remotes/origin/gh-pages
         <form name="myTable">
             Row minimum: <input type="text" id="rowMin" placeholder="Minimum value"><br>
             Row maximum: <input type="text" id="rowMax" placeholder="Maximum value"><br>
             Column minimum: <input type="text" id="colMin" placeholder="Minimum value"><br>
+<<<<<<< HEAD
+            Column maximum: <input type="text" id="colMax" placeholder="Maximum value"><br>
+            <input type="button" value="Make my table" onclick="buildTable()">
+        </form>
+        <p></p>
+        <div id="multiplicationTable">
+        </div>
+=======
             Column maximum: <input type="text" id="colMax" placeholder="Maximum value"><br><br>
             <input type="button" value="Make my table" onclick="buildTable()">
         </form>
@@ -62,5 +89,6 @@
         <div id="multiplicationTable">
         </div>
         <p></p>
+>>>>>>> refs/remotes/origin/gh-pages
     </body>
 </html>

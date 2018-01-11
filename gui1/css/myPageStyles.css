@@ -19,7 +19,7 @@ body {
     background-image: url('http://i763.photobucket.com/albums/xx272/Toukou/Backgrounds/6787-neon-headphones-1920x1080-music-wallpaper_zps2d9bc892.\
 jpg~original');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: left top;
     background-color: black;
 }
